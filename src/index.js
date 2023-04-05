@@ -1,13 +1,14 @@
-import _ from 'lodash';
+import displayTask from './modules/displayTask.js';
 import './style.css';
 
-function component() {
-  const element = document.createElement('div');
+const taskListContainer = document.getElementById('mytasklist');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-  return element;
-}
+const tasks = [
+  { description: 'Second Task', completed: false, index: 2 },
+  { description: 'Third Task', completed: true, index: 3 },
+  { description: 'First Task', completed: false, index: 1 },
+];
 
-document.body.appendChild(component());
+const taskSortedByIndex = tasks.sort((a, b) => a.index - b.index);
+
+displayTask(taskSortedByIndex, taskListContainer);

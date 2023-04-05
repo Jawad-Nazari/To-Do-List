@@ -1,7 +1,59 @@
-.hello {
-  color: red;
-}
-
 body {
   background-color: bisque;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasklist {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todolist {
+  width: 35%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li div {
+  display: flex;
+}
+
+.btn-clear {
+  border: 0 none;
+  width: 100%;
+  padding: 18px;
+}
+
+.lable {
+  padding-left: -5px;
+}
+
+.input-list {
+  width: 90%;
+  height: 6vh;
+  padding-left: 5px;
+  border: none;
+}
+
+form {
+  border: silver 1px solid;
+  width: 100%;
+}
+
+.task-details {
+  padding-left: 5px;
+}
+
+.checkbox-container {
+  padding-left: 5px;
 }
