@@ -77,7 +77,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]( https://jawad-nazari.github.io/Awsome-book/)
+- [Live Demo Link]( https://jawad-nazari.github.io/To-Do-list/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -162,7 +162,7 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Jawad-Nazari/Awsome-book/tree/awsome_book_basic/MIT.md) licensed.
+This project is [MIT](https://github.com/Jawad-Nazari/To-Do-List/List_Structure/MIT.md) licensed.
 
 
 
