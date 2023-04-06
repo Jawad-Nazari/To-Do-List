@@ -2,39 +2,36 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/f8cbf64be7.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-
-  <title>My To Do List</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/d7d1a0422d.js" crossorigin="anonymous"></script>
+  <title>To Do List App</title>
 </head>
 
 <body>
-  <div class="todolist">
-    <div class="title">
-
-    </div>
-    <div>
-      <input type="text" class="input-list" placeholder=" Today's To do List" />
-
+  <h2 class="title">My To Do App</h2>
+  <div class="main">
+    <div class="header">
+      <h3 class="tasksTitle">Today's To Do List</h3>
       <i class="fas fa-sync"></i>
+    </div>
+    <div class="addTask">
       <form class="form">
 
-        <input type="text" class="input-list" placeholder=" Add task to your List..." />
-        <i class="fas fa-arrow-right"></i>
+        <input id="input" type="text" placeholder="Add to your todo list..." />
 
-
+        <i class="fas fa-arrow-right" id="submit"></i>
       </form>
-      <ul class="tasklist" id="mytasklist">
-      </ul>
-      <button class="btn-clear">Clear all completed</button>
     </div>
 
+    <div id="myTasksList"></div>
+    <div class="clear">
+      <button class="btn" id="remove">Clear All Completed</button>
+    </div>
+
+
   </div>
-  <script src="main.js"></script>
 </body>
 
 </html>

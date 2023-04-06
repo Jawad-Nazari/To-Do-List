@@ -1,14 +1,36 @@
-import displayTask from './modules/displayTask.js';
 import './style.css';
+import {
+  displayTask, addTask, editTask, deleteTask,
+} from './modules/displayTask.js';
 
-const taskListContainer = document.getElementById('mytasklist');
+const tasksList = document.getElementById('myTasksList');
+const newTask = document.getElementById('input');
+const submit = document.getElementById('submit');
 
-const tasks = [
-  { description: 'Second Task', completed: false, index: 2 },
-  { description: 'Third Task', completed: true, index: 3 },
-  { description: 'First Task', completed: false, index: 1 },
-];
+newTask.addEventListener('keypress', (e) => {
+  addTask(e);
+});
 
-const taskSortedByIndex = tasks.sort((a, b) => a.index - b.index);
+submit.addEventListener('click', () => {
+  addTask('clicked');
+});
 
-displayTask(taskSortedByIndex, taskListContainer);
+tasksList.addEventListener('click', (event) => {
+  const clickedItem = event.target.classList[event.target.classList.length - 1];
+  const li = event.target.parentElement;
+  if (clickedItem === 'deleteTask') {
+    deleteTask(li.index);
+    event.target.parentElement.remove();
+  }
+});
+
+tasksList.addEventListener('keypress', (event) => {
+  const taskToEdit = event.target.classList[event.target.classList.length - 1];
+  const li = event.target.parentElement;
+  const index = li.id;
+  if (taskToEdit === 'edit') {
+    editTask(index, event);
+  }
+});
+
+document.addEventListener('DOMContentLoaded', displayTask());
