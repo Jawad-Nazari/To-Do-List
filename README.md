@@ -45,7 +45,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [To Do List: list structure ] <a name="about-project"></a>
+# 📖 [To_Do_List: Add & Remove ] <a name="about-project"></a>
 
 **Awesome Books With ES6!** This is todo list projects where you can add tasks and remove tasks and see them in a list.
 
@@ -65,15 +65,12 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **[Good UI]**
-- **[Good Design]**
-
+- **[Good and Simple Design]**
+ **[Add & Remove Tasks easliy]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -119,7 +116,7 @@ In order to run this project you need:
 - minimalistic design
 
 # **[Feature-2]** 
-- More options will be added 
+- More options will be added and it will be intractive
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,7 +151,7 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Jawad-Nazari/To-Do-List/List_Structure/MIT.md) licensed.
+This project is [MIT](https://github.com/Jawad-Nazari/To-Do-List/Add_Remove_Feature/MIT.md) licensed.
 
 
 
