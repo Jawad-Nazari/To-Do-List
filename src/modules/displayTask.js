@@ -1,8 +1,6 @@
-
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 const mytaskList = document.getElementById('myTasksList');
-
 
 const displayTask = () => {
   mytaskList.innerHTML = '';
@@ -12,8 +10,8 @@ const displayTask = () => {
     taskContainer.index = `${task.index}`;
     taskContainer.innerHTML = `<div class="taskInput" id='${task.index}'>
                                ${task.completed === true ? `
-                               <input type="checkbox" id="checkbox" class="checked" checked></input>` :
-        '<input type="checkbox" id="checkbox" class="unchecked"></input>'}
+                               <input type="checkbox" id="checkbox" class="checked" checked></input>`
+    : '<input type="checkbox" id="checkbox" class="unchecked"></input>'}
         <input class="${task.completed === true ? 'taskCompleted editTask' : 'editTask'}"
         type="text" value="${task.description}">
       </input>
@@ -22,7 +20,6 @@ const displayTask = () => {
     mytaskList.appendChild(taskContainer);
   });
 };
-
 
 const newTask = document.getElementById('input');
 const addTask = (e) => {
@@ -64,7 +61,6 @@ const loadTasks = (data) => {
   tasks = data;
   displayTask();
 };
-
 
 export {
   displayTask, addTask, editTask, deleteTask, tasks, loadTasks,
