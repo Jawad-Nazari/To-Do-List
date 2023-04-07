@@ -151,7 +151,7 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Jawad-Nazari/To-Do-List/Interactive_List/MIT.md) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 
 
