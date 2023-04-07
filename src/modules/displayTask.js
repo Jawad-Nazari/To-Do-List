@@ -1,7 +1,6 @@
+/* eslint-disable import/no-mutable-exports */
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-
 const mytaskList = document.getElementById('myTasksList');
-
 const displayTask = () => {
   mytaskList.innerHTML = '';
   tasks.forEach((task) => {
