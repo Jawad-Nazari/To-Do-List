@@ -45,9 +45,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [To_Do_List: Add & Remove ] <a name="about-project"></a>
+# 📖 [To_Do_List: Intractive App ] <a name="about-project"></a>
 
-**Awesome Books With ES6!** This is todo list projects where you can add tasks and remove tasks and see them in a list.
+**Awesome Books With ES6!** This is todo list projects where you can add tasks and remove and update tasks and see them inside the list.
 
 
 ## 🛠 Built With <a name="built-with">
@@ -67,7 +67,7 @@ After you're finished please remove all the comments and instructions!
 
 - **[Good and Simple Design]**
  **[Add & Remove Tasks easliy]**
-
+ **[Intractive Application]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,7 +116,7 @@ In order to run this project you need:
 - minimalistic design
 
 # **[Feature-2]** 
-- More options will be added and it will be intractive
+- More options like setting date will be added 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,7 +151,7 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Jawad-Nazari/To-Do-List/Add_Remove_Feature/MIT.md) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 
 
