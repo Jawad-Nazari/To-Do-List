@@ -1,6 +1,8 @@
+
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 const mytaskList = document.getElementById('myTasksList');
+
 
 const displayTask = () => {
   mytaskList.innerHTML = '';
@@ -9,23 +11,23 @@ const displayTask = () => {
     taskContainer.classList = 'content';
     taskContainer.index = `${task.index}`;
     taskContainer.innerHTML = `<div class="taskInput" id='${task.index}'>
-                          <input type="checkbox"></input>
-                            <input id="info" class="${task.completed === true ? 'taskCmpleted' : 'edit'}"
-                              type="text" value="${task.description}">
-                            </input>
-                          </div>
-                          <i class="fa-solid fa-trash-can deleteTask" id="removeTask"></i>`;
-    const info = document.getElementById('info');
-    if (task.completed === true) {
-      info.classList.add('taskCompleted');
-    }
+                               ${task.completed === true ? `
+                               <input type="checkbox" id="checkbox" class="checked" checked></input>` :
+        '<input type="checkbox" id="checkbox" class="unchecked"></input>'}
+        <input class="${task.completed === true ? 'taskCompleted editTask' : 'editTask'}"
+        type="text" value="${task.description}">
+      </input>
+    </div>
+  <i class="fa-solid fa-trash-can removeTask" id="removeTask"></i>`;
     mytaskList.appendChild(taskContainer);
   });
 };
 
+
 const newTask = document.getElementById('input');
 const addTask = (e) => {
   if (e.key === 'Enter' || e === 'clicked') {
+    e.preventDefault();
     const taskItem = {
       description: newTask.value,
       completed: false,
@@ -58,6 +60,12 @@ const deleteTask = (targetIndex) => {
   displayTask();
 };
 
+const loadTasks = (data) => {
+  tasks = data;
+  displayTask();
+};
+
+
 export {
-  displayTask, addTask, editTask, deleteTask,
+  displayTask, addTask, editTask, deleteTask, tasks, loadTasks,
 };
