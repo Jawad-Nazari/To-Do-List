@@ -74,7 +74,8 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]( https://jawad-nazari.github.io/To-Do-List/dist/index.html/)
+- [Live Demo Link](https://jawad-nazari.github.io/To-Do-List/dist/index.html)
+- https://jawad-nazari.github.io/To-Do-List/dist/index.html
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
